@@ -4,9 +4,6 @@
                 768px (iPad) | 1024px | 1440px
    ===================================================== */
 
-/* --- Header nav (sub-pages) --- */
-.sub-nav{display:flex;gap:1.25rem;align-items:center}
-.sub-nav-link{font-size:.8125rem;text-transform:uppercase;letter-spacing:.03em;color:var(--charcoal);white-space:nowrap}
 
 /* --- Breadcrumb --- */
 .breadcrumb{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--stone);margin-bottom:1.25rem}
@@ -47,12 +44,14 @@
 /* --- FAQ section --- */
 .faq-section{padding:var(--sec) 0;background:var(--concrete)}
 .faq-section h2{font-size:clamp(1.25rem,3vw,2.25rem);font-weight:700;color:var(--charcoal);margin-bottom:2rem}
-.faq-list{display:flex;flex-direction:column;gap:1px;max-width:720px}
-.faq-item{background:var(--bone);border:var(--bl)}
+.faq-list{display:flex;flex-direction:column;gap:.5rem;max-width:720px}
+.faq-item{background:var(--bone);border:var(--bl);border-left:3px solid transparent;transition:border-left-color .2s}
+details[open].faq-item{border-left-color:var(--brick)}
 .faq-q{font-size:.9rem;font-weight:700;color:var(--charcoal);padding:1.125rem 1.25rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.875rem}
-.faq-q::after{content:'＋';color:var(--brick);font-size:1rem;flex-shrink:0}
-details[open] .faq-q::after{content:'－'}
-.faq-a{padding:0 1.25rem 1.125rem;font-size:.875rem;line-height:1.8;color:var(--graphite)}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q::after{content:'→';color:var(--brick);font-size:.9rem;flex-shrink:0;display:inline-block;transition:transform .25s}
+details[open] .faq-q::after{transform:rotate(90deg)}
+.faq-a{padding:.25rem 1.25rem 1.25rem;font-size:.875rem;line-height:1.8;color:var(--graphite);border-top:1px solid var(--line)}
 
 /* --- CTA section --- */
 .cta-section{padding:var(--sec) 0;background:var(--bone);border-top:var(--bl)}
@@ -72,13 +71,11 @@ details[open] .faq-q::after{content:'－'}
    ===================================================== */
 @media(max-width:389px){
   .sub-h1{font-size:1.75rem}
-  .sub-nav-link{display:none}
   .nav-cta{font-size:.75rem;padding:.375rem .75rem}
   .sub-photo{height:180px}
   .service-card{padding:1.125rem}
-  .faq-q{font-size:.8rem;padding:.875rem .875rem}
-  .faq-q::after{font-size:.9rem}
-  .faq-a{font-size:.8125rem;line-height:1.7;padding:0 .875rem .875rem}
+  .faq-q{font-size:.8rem;padding:.875rem}
+  .faq-a{font-size:.8125rem;line-height:1.7;padding:.5rem .875rem 1rem}
   .faq-section h2{font-size:1.25rem;margin-bottom:1.25rem}
 }
 
@@ -91,7 +88,7 @@ details[open] .faq-q::after{content:'－'}
   .cta-links{flex-direction:row;flex-wrap:wrap;align-items:center}
   .sub-photo{height:260px}
   .faq-q{font-size:.875rem;padding:1rem 1.25rem}
-  .faq-a{font-size:.875rem;padding:0 1.25rem 1rem}
+  .faq-a{font-size:.875rem;padding:.25rem 1.25rem 1.125rem}
 }
 
 /* =====================================================
@@ -105,7 +102,6 @@ details[open] .faq-q::after{content:'－'}
    640px — kleine Tablets, große Phones quer
    ===================================================== */
 @media(min-width:640px){
-  .sub-nav-link{display:block}
   .sub-photo{height:320px}
   .sub-intro p{font-size:.9375rem}
   .service-card p{font-size:.9rem}
