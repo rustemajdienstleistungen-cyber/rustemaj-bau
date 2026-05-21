@@ -143,6 +143,7 @@
 .fab-top{background:var(--charcoal);color:var(--bone);border:1px solid #333;box-shadow:0 4px 16px rgba(26,26,26,.25);opacity:0;pointer-events:none;transform:translateY(10px)}
 .fab-top.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
 .fab-top:hover{background:var(--brick);border-color:var(--brick);transform:translateY(-2px)}
+@media(max-width:374px){.fab{width:44px;height:44px}.fab-wrap{bottom:1rem;right:.875rem;gap:.5rem}}
 @media(min-width:1280px){.fab{width:56px;height:56px}}
 
 /* REVEAL + ANIMATIONS + TOAST */
