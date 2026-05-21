@@ -118,6 +118,9 @@
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}
 .footer-logo{height:180px;width:auto;display:block}
 .footer-address{font-size:.75rem;color:var(--stone)}
+.footer-leistungen{display:flex;gap:.75rem 1.25rem;flex-wrap:wrap;justify-content:center;width:100%}
+.footer-leistungen a{font-size:.75rem;color:var(--stone);transition:color .2s}
+.footer-leistungen a:hover{color:var(--brick)}
 .footer-meta{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center}
 .footer-meta a{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--stone);transition:color .2s}
 .footer-meta a:hover{color:var(--brick)}
