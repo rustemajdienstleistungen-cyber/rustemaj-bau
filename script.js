@@ -150,8 +150,7 @@ function initAll() {
   initLeistungGallery('sanierungGallery', 'sanierungTrack', 'sanierungDots');
   initLeistungGallery('renovierungGallery', 'renovierungTrack', 'renovierungDots');
   initLeistungGallery('pflasterGallery', 'pflasterTrack', 'pflasterDots');
-  initLeistungGallery('fensterGallery', 'fensterTrack', 'fensterDots');
-  initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
+initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
 
   const toast = document.getElementById('toast');
   let toastTimer;
