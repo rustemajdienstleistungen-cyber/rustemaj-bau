@@ -15,7 +15,7 @@ address{font-style:normal}
 .site-header.scrolled{background:rgba(245,241,234,.96);box-shadow:0 1px 24px rgba(26,26,26,.07)}
 .site-header.scrolled::before{content:'';position:absolute;inset:0;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:-1;pointer-events:none}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:80px}
-.nav-logo{height:90px;width:auto;display:block;border-radius:8px}
+.nav-logo{height:90px;width:auto;display:block}
 .primary-nav{position:fixed;top:0;right:0;bottom:0;width:76vw;max-width:300px;background:var(--bone);border-left:var(--bl);display:flex;flex-direction:column;padding:100px 2rem 2.5rem;gap:2rem;transform:translateX(110%);transition:transform .35s cubic-bezier(.4,0,.2,1);z-index:200;box-shadow:-8px 0 40px rgba(26,26,26,.1)}
 .primary-nav.open{transform:translateX(0)}
 .primary-nav a{font-size:.8125rem;text-transform:uppercase;letter-spacing:.03em;color:var(--charcoal);white-space:nowrap}
