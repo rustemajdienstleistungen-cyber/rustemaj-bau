@@ -133,6 +133,15 @@
   .footer-copyright{grid-column:1/-1;text-align:center}
 }
 
+@media(max-width:389px){
+  .faq-item summary{font-size:.875rem;padding:1rem 0}
+  .faq-item p{font-size:.85rem;line-height:1.65;padding-bottom:1rem}
+}
+@media(min-width:390px) and (max-width:639px){
+  .faq-item summary{font-size:.9375rem}
+  .faq-item p{font-size:.875rem}
+}
+
 /* FAB */
 .fab-wrap{position:fixed;bottom:1.5rem;right:1.25rem;display:flex;flex-direction:column;gap:.75rem;z-index:500}
 .fab{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .25s,box-shadow .25s,opacity .3s;text-decoration:none}

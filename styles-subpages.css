@@ -73,8 +73,13 @@ details[open] .faq-q::after{content:'－'}
 @media(max-width:389px){
   .sub-h1{font-size:1.75rem}
   .sub-nav-link{display:none}
+  .nav-cta{font-size:.75rem;padding:.375rem .75rem}
   .sub-photo{height:180px}
   .service-card{padding:1.125rem}
+  .faq-q{font-size:.8rem;padding:.875rem .875rem}
+  .faq-q::after{font-size:.9rem}
+  .faq-a{font-size:.8125rem;line-height:1.7;padding:0 .875rem .875rem}
+  .faq-section h2{font-size:1.25rem;margin-bottom:1.25rem}
 }
 
 /* =====================================================
@@ -85,6 +90,8 @@ details[open] .faq-q::after{content:'－'}
   .sub-cta-row{flex-direction:row;flex-wrap:wrap;align-items:center}
   .cta-links{flex-direction:row;flex-wrap:wrap;align-items:center}
   .sub-photo{height:260px}
+  .faq-q{font-size:.875rem;padding:1rem 1.25rem}
+  .faq-a{font-size:.875rem;padding:0 1.25rem 1rem}
 }
 
 /* =====================================================
