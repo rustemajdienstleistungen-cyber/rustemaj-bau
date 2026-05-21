@@ -1,19 +1,37 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Disallow: /Your%20Helsana%20Secure%20Mail%20Message_20_05_2026.html
 
-User-agent: GPTBot
+# Google
+User-agent: Googlebot
 Allow: /
-
-User-agent: ClaudeBot
+User-agent: Googlebot-Image
 Allow: /
-
 User-agent: Google-Extended
 Allow: /
 
+# AI Search & Language Model Crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
 User-agent: PerplexityBot
 Allow: /
-
 User-agent: Applebot-Extended
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://rustemaj-bau.com/sitemap.xml

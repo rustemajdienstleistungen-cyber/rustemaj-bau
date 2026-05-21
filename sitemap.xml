@@ -1,21 +1,42 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://rustemaj-bau.com/</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/logo.png</image:loc>
+      <image:title>Rustemaj Dienstleistungen – Handwerker Stockach</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Grosse_terasse_gefliest.jpeg</image:loc>
+      <image:title>Pflasterarbeiten Terrasse Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Renovieruing_wohnzimmer.jpeg</image:loc>
+      <image:title>Renovierung Wohnzimmer Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Dachgedämmt.jpeg</image:loc>
+      <image:title>Energetische Sanierung Dach Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Einfahrt-Pflastern.jpeg</image:loc>
+      <image:title>Einfahrt Pflastern Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rustemaj-bau.com/impressum.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   <url>
     <loc>https://rustemaj-bau.com/datenschutz.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
 </urlset>
