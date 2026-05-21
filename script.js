@@ -135,39 +135,6 @@ function initAll() {
     slider.addEventListener('touchend', () => { if (drag && Math.abs(txCur - txStart) > 44) show(txCur < txStart ? active + 1 : active - 1); drag = false; });
   }
 
-  const heroSlider = document.getElementById('heroSlider');
-  if (heroSlider) {
-    const track = document.getElementById('heroTrack');
-    const dotsEl = document.getElementById('heroDots');
-    const prevBtn = document.getElementById('heroPrev');
-    const nextBtn = document.getElementById('heroNext');
-    const slides = track.querySelectorAll('.hero-slide');
-    let cur = 0;
-    slides.forEach((_, i) => {
-      const d = document.createElement('button');
-      d.className = 'hero-dot' + (i === 0 ? ' active' : '');
-      d.setAttribute('aria-label', 'Bild ' + (i + 1));
-      d.addEventListener('click', () => goTo(i));
-      dotsEl.appendChild(d);
-    });
-    function goTo(n) {
-      cur = (n + slides.length) % slides.length;
-      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
-      dotsEl.querySelectorAll('.hero-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
-    }
-    prevBtn.addEventListener('click', () => goTo(cur - 1));
-    nextBtn.addEventListener('click', () => goTo(cur + 1));
-    let txStart = 0, txCur = 0, dragging = false;
-    track.addEventListener('touchstart', e => { txStart = e.touches[0].clientX; txCur = txStart; dragging = true; }, { passive: true });
-    track.addEventListener('touchmove', e => { if (dragging) txCur = e.touches[0].clientX; }, { passive: true });
-    track.addEventListener('touchend', () => { if (dragging && Math.abs(txCur - txStart) > 44) goTo(txCur < txStart ? cur + 1 : cur - 1); dragging = false; });
-    let autoH = setInterval(() => goTo(cur + 1), 4500);
-    const pause = () => clearInterval(autoH);
-    heroSlider.addEventListener('touchstart', pause, { passive: true });
-    prevBtn.addEventListener('click', pause);
-    nextBtn.addEventListener('click', pause);
-  }
-
   const leistungTabs = document.getElementById('leistungTabs');
   const leistungenList = document.getElementById('leistungenList');
   if (leistungTabs && leistungenList) {

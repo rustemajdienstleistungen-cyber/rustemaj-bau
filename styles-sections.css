@@ -44,14 +44,7 @@
 
 /* STATS */
 .stats{padding:var(--sec) 0;background:var(--charcoal)}
-.stats-row{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}
-.stats-row--two{grid-template-columns:1fr 1px 1fr;max-width:600px;margin:0 auto;align-items:center}
-.stats-row--two .stat-divider{display:block;width:1px;height:52px;background:rgba(245,241,234,.12);margin:0 auto}
-.stat-divider{display:none}
-.stat{text-align:center}
-.stat-number{font-size:clamp(2.5rem,6vw,4rem);font-weight:700;letter-spacing:-.03em;color:var(--bone);line-height:1}
-.stat-suffix{color:var(--brick);font-size:.7em;margin-left:2px}
-.stat-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-top:.75rem}
+.stats-statement{text-align:center;font-size:clamp(1.5rem,4vw,2.5rem);font-weight:700;letter-spacing:-.02em;color:var(--bone);font-style:italic}
 
 /* REZENSIONEN */
 .rezensionen{padding:var(--sec) 0;background:var(--bone);border-top:var(--bl)}
