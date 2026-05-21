@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://rustemaj-bau.com/</loc>
     <lastmod>2026-05-21</lastmod>
@@ -11,32 +12,101 @@
       <image:title>Rustemaj Dienstleistungen – Handwerker Stockach</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://rustemaj-bau.com/Grosse_terasse_gefliest.jpeg</image:loc>
-      <image:title>Pflasterarbeiten Terrasse Stockach – Rustemaj Dienstleistungen</image:title>
+      <image:loc>https://rustemaj-bau.com/Dachdecker_Sanierung.jpeg</image:loc>
+      <image:title>Energetische Sanierung Dach Stockach – Rustemaj</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://rustemaj-bau.com/Renovieruing_wohnzimmer.jpeg</image:loc>
-      <image:title>Renovierung Wohnzimmer Stockach – Rustemaj Dienstleistungen</image:title>
+      <image:loc>https://rustemaj-bau.com/Pflaster_Hero.jpeg</image:loc>
+      <image:title>Pflasterarbeiten Stockach Bodensee – Rustemaj</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/renovierung_1.jpeg</image:loc>
+      <image:title>Renovierung Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/sanierung-stockach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Dachdecker_Sanierung.jpeg</image:loc>
+      <image:title>Energetische Sanierung Stockach – Rustemaj Dienstleistungen</image:title>
     </image:image>
     <image:image>
       <image:loc>https://rustemaj-bau.com/Dachgedämmt.jpeg</image:loc>
-      <image:title>Energetische Sanierung Dach Stockach – Rustemaj Dienstleistungen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rustemaj-bau.com/Einfahrt-Pflastern.jpeg</image:loc>
-      <image:title>Einfahrt Pflastern Stockach – Rustemaj Dienstleistungen</image:title>
+      <image:title>Dach gedämmt Sanierung Stockach</image:title>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/renovierung-stockach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/renovierung_1.jpeg</image:loc>
+      <image:title>Renovierung Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Renovierung_decke_2.jpeg</image:loc>
+      <image:title>Renovierung Innenausbau Stockach</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/pflasterarbeiten-bodensee</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Pflaster_Hero.jpeg</image:loc>
+      <image:title>Pflasterarbeiten Bodensee Stockach – Rustemaj</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Grosse_terasse_gefliest.jpeg</image:loc>
+      <image:title>Große Terrasse gefliest Stockach – Rustemaj</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/abriss-entkernung-stockach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rustemaj-bau.com/Durchbruch_Abriss-hero.jpeg</image:loc>
+      <image:title>Abriss Durchbruch Stockach – Rustemaj Dienstleistungen</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/entruempelung-stockach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rustemaj-bau.com/hausmeisterdienst-stockach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://rustemaj-bau.com/impressum.html</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+
   <url>
     <loc>https://rustemaj-bau.com/datenschutz.html</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+
 </urlset>

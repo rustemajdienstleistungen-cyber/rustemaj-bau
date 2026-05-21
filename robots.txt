@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /Your%20Helsana%20Secure%20Mail%20Message_20_05_2026.html
 
 # Google
 User-agent: Googlebot
