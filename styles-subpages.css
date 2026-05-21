@@ -1,0 +1,149 @@
+/* =====================================================
+   SUB-PAGE SHARED STYLES
+   Breakpoints: 320px | 390px (iPhone 12-17 Pro) |
+                768px (iPad) | 1024px | 1440px
+   ===================================================== */
+
+/* --- Header nav (sub-pages) --- */
+.sub-nav{display:flex;gap:1.25rem;align-items:center}
+.sub-nav-link{font-size:.8125rem;text-transform:uppercase;letter-spacing:.03em;color:var(--charcoal);white-space:nowrap}
+
+/* --- Breadcrumb --- */
+.breadcrumb{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--stone);margin-bottom:1.25rem}
+.breadcrumb a{color:var(--brick);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* --- Hero --- */
+.sub-hero{padding:clamp(2rem,6vw,5rem) 0 2.5rem;background:var(--bone);border-bottom:var(--bl)}
+.sub-h1{font-size:clamp(1.75rem,6vw,3.5rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--charcoal);margin-bottom:1.125rem}
+.sub-h1 em{font-style:italic;font-weight:400;color:var(--brick)}
+.sub-lead{font-size:.9375rem;line-height:1.75;color:var(--graphite);max-width:38rem;margin-bottom:1.75rem}
+.sub-cta-row{display:flex;flex-direction:column;gap:.75rem;align-items:flex-start}
+
+/* --- Content sections --- */
+.sub-content{padding:var(--sec) 0;background:var(--bone)}
+.sub-intro{max-width:42rem;margin-bottom:3rem}
+.sub-intro h2{font-size:clamp(1.25rem,3vw,2.25rem);font-weight:700;letter-spacing:-.02em;color:var(--charcoal);margin-bottom:.875rem}
+.sub-intro p{font-size:.9rem;line-height:1.8;color:var(--graphite);margin-bottom:.75rem}
+
+/* --- Services grid --- */
+.services-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-bottom:3rem}
+.service-card{border:var(--bl);padding:1.5rem;background:var(--concrete)}
+.service-card h3{font-size:1rem;font-weight:700;color:var(--charcoal);margin-bottom:.5rem;border-left:3px solid var(--brick);padding-left:.75rem}
+.service-card p{font-size:.875rem;line-height:1.7;color:var(--graphite)}
+
+/* --- Photo --- */
+.sub-photo{width:100%;height:220px;object-fit:cover;display:block;margin-bottom:3rem}
+
+/* --- Process section --- */
+.process-section{background:var(--charcoal);padding:var(--sec) 0}
+.process-section h2{font-size:clamp(1.25rem,3vw,2.25rem);font-weight:700;color:var(--bone);margin-bottom:2rem}
+.process-steps{display:grid;grid-template-columns:1fr;gap:1.25rem}
+.process-step{display:flex;gap:1rem;align-items:flex-start}
+.step-num{flex-shrink:0;width:32px;height:32px;background:var(--brick);color:var(--bone);font-weight:700;font-size:.8125rem;display:flex;align-items:center;justify-content:center}
+.step-body h4{font-size:.9rem;font-weight:700;color:var(--bone);margin-bottom:.3rem}
+.step-body p{font-size:.8125rem;line-height:1.7;color:rgba(245,241,234,.7)}
+
+/* --- FAQ section --- */
+.faq-section{padding:var(--sec) 0;background:var(--concrete)}
+.faq-section h2{font-size:clamp(1.25rem,3vw,2.25rem);font-weight:700;color:var(--charcoal);margin-bottom:2rem}
+.faq-list{display:flex;flex-direction:column;gap:1px;max-width:720px}
+.faq-item{background:var(--bone);border:var(--bl)}
+.faq-q{font-size:.9rem;font-weight:700;color:var(--charcoal);padding:1.125rem 1.25rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.875rem}
+.faq-q::after{content:'＋';color:var(--brick);font-size:1rem;flex-shrink:0}
+details[open] .faq-q::after{content:'－'}
+.faq-a{padding:0 1.25rem 1.125rem;font-size:.875rem;line-height:1.8;color:var(--graphite)}
+
+/* --- CTA section --- */
+.cta-section{padding:var(--sec) 0;background:var(--bone);border-top:var(--bl)}
+.cta-section h2{font-size:clamp(1.25rem,3vw,2.25rem);font-weight:700;color:var(--charcoal);margin-bottom:.875rem}
+.cta-section p{font-size:.9rem;line-height:1.7;color:var(--graphite);margin-bottom:1.75rem;max-width:34rem}
+.cta-links{display:flex;flex-direction:column;gap:.75rem;align-items:flex-start}
+
+/* --- Related links section --- */
+.related-section{padding:2.5rem 0;background:var(--concrete);border-top:var(--bl)}
+.related-section h3{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--stone);margin-bottom:1rem}
+.related-links{display:flex;flex-wrap:wrap;gap:.625rem}
+.related-link{font-size:.8125rem;color:var(--brick);border:1px solid var(--line);padding:.4375rem .875rem;text-decoration:none;transition:background .2s,color .2s}
+.related-link:hover{background:var(--brick);color:var(--bone)}
+
+/* =====================================================
+   320px — kleinste Geräte
+   ===================================================== */
+@media(max-width:389px){
+  .sub-h1{font-size:1.75rem}
+  .sub-nav-link{display:none}
+  .sub-photo{height:180px}
+  .service-card{padding:1.125rem}
+}
+
+/* =====================================================
+   390px+ — iPhone 12 / 13 / 14 / 15 / 16 / 17 Pro
+   ===================================================== */
+@media(min-width:390px){
+  .sub-hero{padding:clamp(2.5rem,6vw,5rem) 0 3rem}
+  .sub-cta-row{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .cta-links{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .sub-photo{height:260px}
+}
+
+/* =====================================================
+   430px+ — iPhone 15 Pro Max / 16 Plus / 17 Plus
+   ===================================================== */
+@media(min-width:430px){
+  .services-grid{grid-template-columns:1fr 1fr}
+}
+
+/* =====================================================
+   640px — kleine Tablets, große Phones quer
+   ===================================================== */
+@media(min-width:640px){
+  .sub-nav-link{display:block}
+  .sub-photo{height:320px}
+  .sub-intro p{font-size:.9375rem}
+  .service-card p{font-size:.9rem}
+}
+
+/* =====================================================
+   768px — iPad Portrait
+   ===================================================== */
+@media(min-width:768px){
+  .sub-hero{padding:clamp(3rem,7vw,5rem) 0 3.5rem}
+  .sub-lead{font-size:1.0625rem}
+  .services-grid{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .process-steps{grid-template-columns:1fr 1fr}
+  .sub-photo{height:360px}
+  .faq-q{font-size:.9375rem;padding:1.25rem 1.5rem}
+  .faq-a{padding:0 1.5rem 1.25rem;font-size:.9rem}
+}
+
+/* =====================================================
+   1024px — iPad Landscape / kleine Desktops
+   ===================================================== */
+@media(min-width:1024px){
+  .sub-nav{gap:1.75rem}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .process-steps{grid-template-columns:repeat(5,1fr)}
+  .sub-photo{height:420px}
+  .sub-h1{font-size:clamp(2.5rem,4vw,3.5rem)}
+}
+
+/* =====================================================
+   1280px — Standard Desktop
+   ===================================================== */
+@media(min-width:1280px){
+  .services-grid{grid-template-columns:1fr 1fr 1fr 1fr}
+  .sub-photo{height:480px}
+}
+
+/* =====================================================
+   1440px — Großer Desktop
+   ===================================================== */
+@media(min-width:1440px){
+  .sub-h1{font-size:3.75rem}
+  .sub-lead{font-size:1.125rem;max-width:44rem}
+  .sub-intro h2{font-size:2.5rem}
+  .sub-intro p{font-size:1rem}
+  .service-card p{font-size:.9375rem}
+  .sub-photo{height:520px}
+}
