@@ -107,6 +107,13 @@
 .kontakt-row:not(.kontakt-row--static):hover{padding-left:.75rem;color:var(--rust)}
 .kontakt-row-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--stone)}
 .kontakt-row-value{font-size:.9375rem;font-weight:500}
+.kontakt-hours{display:flex;flex-direction:column;gap:.35rem;text-align:left;width:100%}
+.kontakt-hours span{display:flex;justify-content:space-between;gap:.75rem}
+.hours-day{color:var(--stone);font-weight:400}
+.hours-time{font-weight:500}
+@media(min-width:768px){
+  .kontakt-hours{text-align:right;align-items:flex-end}
+}
 @media(min-width:768px){
   .kontakt-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
   .kontakt-row{flex-direction:row;justify-content:space-between;align-items:center}
