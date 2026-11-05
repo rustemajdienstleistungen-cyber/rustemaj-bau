@@ -147,13 +147,29 @@ function initAll() {
     });
   }
 
-  initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
   initLeistungGallery('sanierungGallery', 'sanierungTrack', 'sanierungDots');
   initLeistungGallery('renovierungGallery', 'renovierungTrack', 'renovierungDots');
+  initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
 
   const toast = document.getElementById('toast');
   let toastTimer;
   const showToast = msg => { clearTimeout(toastTimer); toast.textContent = msg; toast.classList.add('show'); toastTimer = setTimeout(() => toast.classList.remove('show'), 2800); };
+
+  if (leistungTabs && matchMedia('(max-width: 819px)').matches && !localStorage.getItem('tabHintShown')) {
+    const tabHintObs = new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) return;
+      tabHintObs.disconnect();
+      localStorage.setItem('tabHintShown', '1');
+      setTimeout(() => {
+        showToast('👉 Tippen zum Wechseln der Leistungen');
+        const otherTab = leistungTabs.querySelector('.leistung-tab:not(.active)');
+        otherTab.classList.add('nudge');
+        otherTab.addEventListener('animationend', () => otherTab.classList.remove('nudge'), { once: true });
+      }, 500);
+    }, { threshold: 0.6 });
+    tabHintObs.observe(leistungTabs);
+  }
+
   document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
