@@ -155,18 +155,20 @@ function initAll() {
   let toastTimer;
   const showToast = msg => { clearTimeout(toastTimer); toast.textContent = msg; toast.classList.add('show'); toastTimer = setTimeout(() => toast.classList.remove('show'), 2800); };
 
-  if (leistungTabs && matchMedia('(max-width: 819px)').matches && !localStorage.getItem('tabHintShown')) {
+  let tabHintSeen;
+  try { tabHintSeen = localStorage.getItem('tabHintShown'); } catch (e) { tabHintSeen = null; }
+  if (leistungTabs && !tabHintSeen) {
     const tabHintObs = new IntersectionObserver(entries => {
       if (!entries[0].isIntersecting) return;
       tabHintObs.disconnect();
-      localStorage.setItem('tabHintShown', '1');
       setTimeout(() => {
         showToast('👉 Tippen zum Wechseln der Leistungen');
         const otherTab = leistungTabs.querySelector('.leistung-tab:not(.active)');
         otherTab.classList.add('nudge');
         otherTab.addEventListener('animationend', () => otherTab.classList.remove('nudge'), { once: true });
-      }, 500);
-    }, { threshold: 0.6 });
+      }, 400);
+      try { localStorage.setItem('tabHintShown', '1'); } catch (e) {}
+    }, { threshold: 0.3 });
     tabHintObs.observe(leistungTabs);
   }
 
