@@ -147,10 +147,9 @@ function initAll() {
     });
   }
 
+  initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
   initLeistungGallery('sanierungGallery', 'sanierungTrack', 'sanierungDots');
   initLeistungGallery('renovierungGallery', 'renovierungTrack', 'renovierungDots');
-  initLeistungGallery('pflasterGallery', 'pflasterTrack', 'pflasterDots');
-initLeistungGallery('abrissGallery', 'abrissTrack', 'abrissDots');
 
   const toast = document.getElementById('toast');
   let toastTimer;
